@@ -45,7 +45,7 @@ function generateCard() {
 
   setTimeout(() => {
     answer.classList.add("show");
-  }, 640);
+  }, 2000);
 }
 
 // первая карточка
