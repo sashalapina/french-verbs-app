@@ -1,0 +1,165 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Manrope", sans-serif;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 77%;
+  text-transform: uppercase;
+  color: #000;
+
+  background-color: #df523d;
+
+  background-image:
+    repeating-linear-gradient(
+      120deg,
+      rgba(223, 82, 61, 0.12),
+      rgba(223, 82, 61, 0.12) 1px,
+      transparent 1px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      60deg,
+      rgba(223, 82, 61, 0.12),
+      rgba(223, 82, 61, 0.12) 1px,
+      transparent 1px,
+      transparent 60px
+    ),
+    linear-gradient(
+      60deg,
+      rgba(255, 255, 255, 0.05) 25%,
+      transparent 25%,
+      transparent 75%,
+      rgba(255, 255, 255, 0.05) 75%
+    ),
+    linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.05) 25%,
+      transparent 25%,
+      transparent 75%,
+      rgba(255, 255, 255, 0.05) 75%
+    );
+
+  background-size: 70px 120px;
+}
+
+.card {
+  width: min(90vw, 350px);
+  aspect-ratio: 3 / 4;
+
+  padding: 20px;
+
+  border: 0.25px solid rgba(0, 255, 194, 0.1);
+  border-radius: 24px;
+
+  background: #fff;
+
+  box-shadow: 0 16px 60px 0 rgba(0, 0, 0, 0.06);
+
+  cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+.block {
+  height: 100%;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  text-align: center;
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-items: center;
+
+  height: 50%;
+
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.answer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-items: center;
+
+  height: 50%;
+
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.1;
+
+  border-top: 2px solid #df523d;
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.25s ease-out,
+    transform 0.25s ease-out;
+}
+
+.answer.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-main {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 77%;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.mode {
+  border: none;
+  background: none;
+
+  padding: 0;
+  margin: 0;
+
+  font: inherit;
+
+  cursor: pointer;
+}
