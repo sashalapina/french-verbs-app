@@ -218,4 +218,59 @@ export const verbs = [
       },
     ],
   },
+
+  {
+    infinitive: "vouloir",
+    translation: "хотеть",
+    group: 3,
+    irregular: true,
+
+    forms: [
+      {
+        person: "je",
+        conjugation: "veux",
+        translation: "я хочу",
+      },
+      {
+        person: "tu",
+        conjugation: "veux",
+        translation: "ты хочешь",
+      },
+      {
+        person: "il",
+        conjugation: "veut",
+        translation: "он хочет",
+      },
+      {
+        person: "elle",
+        conjugation: "veut",
+        translation: "она хочет",
+      },
+      {
+        person: "on",
+        conjugation: "veut",
+        translation: "мы (*) хотим",
+      },
+      {
+        person: "nous",
+        conjugation: "voulons",
+        translation: "мы хотим",
+      },
+      {
+        person: "vous",
+        conjugation: "voulez",
+        translation: "вы хотите",
+      },
+      {
+        person: "ils",
+        conjugation: "veulent",
+        translation: "они хотят",
+      },
+      {
+        person: "elles",
+        conjugation: "veulent",
+        translation: "они (*) хотят",
+      },
+    ],
+  },
 ];

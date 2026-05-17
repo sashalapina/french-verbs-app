@@ -100,6 +100,7 @@ body {
 
 .question {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   align-items: center;
@@ -162,4 +163,28 @@ body {
   font: inherit;
 
   cursor: pointer;
+}
+
+.controls {
+  position: absolute;
+
+  top: 24px;
+  left: 24px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hint-p {
+  margin: 0;
+  font-size: 24px;
+  color: #df523dbf;
 }
