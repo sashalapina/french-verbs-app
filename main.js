@@ -35,7 +35,7 @@ function generateCard() {
 
   const translation = formObj.translation;
   const verbForm = formObj.conjugation;
-  const hintVerb = `${formObj.person} ${verb.infinitive}`;
+  const hintVerb = `${formObj.person} + ${verb.infinitive}`;
 
   // ВОПРОС
   const question = document.createElement("div");
