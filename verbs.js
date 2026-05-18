@@ -273,4 +273,59 @@ export const verbs = [
       },
     ],
   },
+
+  {
+    infinitive: "pouvoir",
+    translation: "мочь",
+    group: 3,
+    irregular: true,
+
+    forms: [
+      {
+        person: "je",
+        conjugation: "peux",
+        translation: "я могу",
+      },
+      {
+        person: "tu",
+        conjugation: "peux",
+        translation: "ты можешь",
+      },
+      {
+        person: "il",
+        conjugation: "peut",
+        translation: "он может",
+      },
+      {
+        person: "elle",
+        conjugation: "peut",
+        translation: "она может",
+      },
+      {
+        person: "on",
+        conjugation: "peut",
+        translation: "мы (*) можем",
+      },
+      {
+        person: "nous",
+        conjugation: "pouvons",
+        translation: "мы можем",
+      },
+      {
+        person: "vous",
+        conjugation: "pouvez",
+        translation: "вы можете",
+      },
+      {
+        person: "ils",
+        conjugation: "peuvent",
+        translation: "они могут",
+      },
+      {
+        person: "elles",
+        conjugation: "peuvent",
+        translation: "они (*) могут",
+      },
+    ],
+  },
 ];

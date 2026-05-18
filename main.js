@@ -1,14 +1,13 @@
 import { pronouns } from "./pronouns.js";
 import { verbs } from "./verbs.js";
 
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+const burger = document.getElementById("burger");
+
+const menu = document.getElementById("menu");
+
+burger.addEventListener("click", () => {
+  menu.classList.toggle("open");
+});
 
 function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
