@@ -1,0 +1,18 @@
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.text-main {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 77%;
+  text-transform: uppercase;
+  color: #000;
+}

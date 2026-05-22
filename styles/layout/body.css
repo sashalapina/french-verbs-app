@@ -1,0 +1,49 @@
+body {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Manrope", sans-serif;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 77%;
+  text-transform: uppercase;
+  color: #000;
+
+  background-color: #df523d;
+
+  background-image:
+    repeating-linear-gradient(
+      120deg,
+      rgba(223, 82, 61, 0.12),
+      rgba(223, 82, 61, 0.12) 1px,
+      transparent 1px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      60deg,
+      rgba(223, 82, 61, 0.12),
+      rgba(223, 82, 61, 0.12) 1px,
+      transparent 1px,
+      transparent 60px
+    ),
+    linear-gradient(
+      60deg,
+      rgba(255, 255, 255, 0.05) 25%,
+      transparent 25%,
+      transparent 75%,
+      rgba(255, 255, 255, 0.05) 75%
+    ),
+    linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.05) 25%,
+      transparent 25%,
+      transparent 75%,
+      rgba(255, 255, 255, 0.05) 75%
+    );
+
+  background-size: 70px 120px;
+}

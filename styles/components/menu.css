@@ -1,0 +1,68 @@
+.menu {
+  position: absolute;
+
+  top: 70px;
+  right: 20px;
+
+  min-width: 220px;
+
+  padding: 18px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(-10px);
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s;
+}
+
+.menu.open {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+.controls {
+  position: absolute;
+
+  top: 24px;
+  left: 24px;
+}
+
+.topnav {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 100;
+}
+
+.burger {
+  border: none;
+  background: none;
+
+  font-size: 28px;
+  color: #000;
+
+  cursor: pointer;
+}
