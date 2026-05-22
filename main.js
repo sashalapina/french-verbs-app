@@ -1,5 +1,10 @@
-import { pronouns } from "./pronouns.js";
-import { verbs } from "./verbs.js";
+async function loadVerbs() {
+  const response = await fetch("./data/verbs.json");
+
+  return await response.json();
+}
+
+const verbs = await loadVerbs();
 
 const burger = document.getElementById("burger");
 
@@ -16,52 +21,53 @@ function randomInt(min, max) {
 const card = document.getElementById("card");
 
 function generateCard() {
-  // очищаем карточку
   card.innerHTML = "";
 
-  // получить подсказку;
   let hintMode = document.getElementById("hint").checked;
-
-  // случайное местоимение
-  const pronoun = pronouns[randomInt(0, pronouns.length - 1)];
 
   // случайный глагол
   const verb = verbs[randomInt(0, verbs.length - 1)];
 
-  // нужная форма
-  const formObj = verb.forms.find(
-    (f) => f.person.toLowerCase() === pronoun.fr.toLowerCase(),
-  );
+  // случайная форма
+  const form = verb.forms[randomInt(0, verb.forms.length - 1)];
 
-  const translation = formObj.translation;
-  const verbForm = formObj.conjugation;
-  const hintVerb = `${formObj.person} + ${verb.infinitive}`;
+  // данные
+  const translation = form.translation;
 
-  // ВОПРОС
+  const answerText = `${form.person} ${form.conjugation}`;
+
+  const hintText = `${form.person} · ${verb.infinitive}`;
+
+  // QUESTION
   const question = document.createElement("div");
 
   question.classList.add("question");
 
-  question.textContent = `${translation}`;
+  question.textContent = translation;
 
+  // HINT
   if (hintMode) {
     const hint = document.createElement("p");
+
     hint.classList.add("hint-p");
-    hint.textContent = hintVerb;
+
+    hint.textContent = hintText;
+
     question.append(hint);
   }
 
-  // ОТВЕТ
+  // ANSWER
   const answer = document.createElement("div");
 
   answer.classList.add("answer");
 
-  answer.textContent = `${pronoun.fr} ${verbForm}`;
+  answer.textContent = answerText;
 
-  // вставка
+  // append
   card.appendChild(question);
   card.appendChild(answer);
 
+  // reveal animation
   setTimeout(() => {
     answer.classList.add("show");
   }, 2000);

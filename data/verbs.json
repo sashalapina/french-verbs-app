@@ -1,0 +1,56 @@
+[
+  {
+    "infinitive": "faire",
+    "translation": "делать",
+    "group": 3,
+    "irregular": true,
+
+    "forms": [
+      {
+        "person": "je",
+        "conjugation": "fais",
+        "translation": "я делаю"
+      },
+      {
+        "person": "tu",
+        "conjugation": "fais",
+        "translation": "ты делаешь"
+      },
+      {
+        "person": "il",
+        "conjugation": "fait",
+        "translation": "он делает"
+      },
+      {
+        "person": "elle",
+        "conjugation": "fait",
+        "translation": "она делает"
+      },
+      {
+        "person": "on",
+        "conjugation": "fait",
+        "translation": "мы(*) делаем"
+      },
+      {
+        "person": "nous",
+        "conjugation": "faisons",
+        "translation": "мы делаем"
+      },
+      {
+        "person": "vous",
+        "conjugation": "faites",
+        "translation": "вы делаете"
+      },
+      {
+        "person": "ils",
+        "conjugation": "font",
+        "translation": "они делают"
+      },
+      {
+        "person": "elles",
+        "conjugation": "font",
+        "translation": "они(*) делают"
+      }
+    ]
+  }
+]
