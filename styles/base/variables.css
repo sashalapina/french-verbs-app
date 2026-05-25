@@ -1,0 +1,41 @@
+:root {
+  --color-bg: #df523d;
+
+  --color-card: #ffffff;
+
+  --color-text: #000000;
+
+  --color-text-hint: #000000;
+
+  --color-primary: #df523d;
+
+  --color-secondary: #000000;
+
+  --color-border: rgba(0, 255, 194, 0.1);
+
+  --pattern-primary: rgba(223, 82, 61, 0.12);
+
+  --pattern-light: rgba(255, 255, 255, 0.05);
+
+  --pattern-size: 60px;
+}
+
+body.dark {
+  --color-bg: #1f1d1a;
+
+  --color-card: #2a2723;
+
+  --color-text: #f5f1eb;
+
+  --color-text-hint: #000000;
+
+  --color-primary: #9aceeb;
+
+  --color-secondary: #9aceeb;
+
+  --color-border: rgba(255, 255, 255, 0.06);
+
+  --pattern-primary: rgba(154, 206, 235, 0.12);
+
+  --pattern-light: rgba(154, 206, 235, 0.05);
+}

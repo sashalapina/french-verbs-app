@@ -4,14 +4,33 @@ async function loadVerbs() {
   return await response.json();
 }
 
+const themeToggle = document.getElementById("theme");
+
+themeToggle.addEventListener("change", () => {
+  document.body.classList.toggle("dark");
+});
+
 const verbs = await loadVerbs();
 
 const burger = document.getElementById("burger");
 
 const menu = document.getElementById("menu");
 
-burger.addEventListener("click", () => {
+// открыть / закрыть menu
+burger.addEventListener("click", (event) => {
+  event.stopPropagation();
+
   menu.classList.toggle("open");
+});
+
+// клик внутри menu НЕ закрывает его
+menu.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
+// клик вне menu закрывает его
+document.addEventListener("click", () => {
+  menu.classList.remove("open");
 });
 
 function randomInt(min, max) {

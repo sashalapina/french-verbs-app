@@ -12,6 +12,8 @@
 
   background: rgba(255, 255, 255, 0.95);
 
+  color: var(--color-text-hint);
+
   backdrop-filter: blur(10px);
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -62,7 +64,7 @@
   background: none;
 
   font-size: 28px;
-  color: #000;
+  color: var(--color-secondary);
 
   cursor: pointer;
 }

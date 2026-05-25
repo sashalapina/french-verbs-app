@@ -11,38 +11,38 @@ body {
   font-size: 20px;
   line-height: 77%;
   text-transform: uppercase;
-  color: #000;
+  color: var(--color-text);
 
-  background-color: #df523d;
+  background-color: var(--color-bg);
 
   background-image:
     repeating-linear-gradient(
       120deg,
-      rgba(223, 82, 61, 0.12),
-      rgba(223, 82, 61, 0.12) 1px,
+      var(--pattern-primary),
+      var(--pattern-primary) 1px,
       transparent 1px,
       transparent 60px
     ),
     repeating-linear-gradient(
       60deg,
-      rgba(223, 82, 61, 0.12),
-      rgba(223, 82, 61, 0.12) 1px,
+      var(--pattern-primary),
+      var(--pattern-primary) 1px,
       transparent 1px,
       transparent 60px
     ),
     linear-gradient(
       60deg,
-      rgba(255, 255, 255, 0.05) 25%,
+      var(--pattern-light) 25%,
       transparent 25%,
       transparent 75%,
-      rgba(255, 255, 255, 0.05) 75%
+      var(--pattern-light) 75%
     ),
     linear-gradient(
       120deg,
-      rgba(255, 255, 255, 0.05) 25%,
+      var(--pattern-light) 25%,
       transparent 25%,
       transparent 75%,
-      rgba(255, 255, 255, 0.05) 75%
+      var(--pattern-light) 75%
     );
 
   background-size: 70px 120px;

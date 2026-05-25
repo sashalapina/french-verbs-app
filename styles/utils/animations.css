@@ -1,0 +1,27 @@
+body,
+.card,
+.question {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.answer {
+  opacity: 0;
+
+  transform: translateY(10px);
+
+  transition:
+    opacity 0.25s ease-out,
+    transform 0.25s ease-out,
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.answer.show {
+  opacity: 1;
+
+  transform: translateY(0);
+}

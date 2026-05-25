@@ -14,5 +14,5 @@
   line-height: 1.1;
   text-transform: uppercase;
 
-  color: #000;
+  color: var(--color-text);
 }

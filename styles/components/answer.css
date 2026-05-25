@@ -12,13 +12,7 @@
   font-size: 32px;
   line-height: 1.1;
 
-  border-top: 2px solid #df523d;
-
-  opacity: 0;
-  transform: translateY(10px);
-  transition:
-    opacity 0.25s ease-out,
-    transform 0.25s ease-out;
+  border-top: 2px solid var(--color-primary);
 }
 
 .answer.show {

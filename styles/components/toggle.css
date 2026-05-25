@@ -10,5 +10,5 @@
 .hint-p {
   margin: 0;
   font-size: 24px;
-  color: #df533d;
+  color: var(--color-primary);
 }
