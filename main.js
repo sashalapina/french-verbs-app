@@ -47,8 +47,15 @@ function generateCard() {
   // случайный глагол
   const verb = verbs[randomInt(0, verbs.length - 1)];
 
+  //случайное время
+  const tenseKeys = Object.keys(verb.tenses);
+
+  const randomTenseKey = tenseKeys[randomInt(0, tenseKeys.length - 1)];
+
+  const tense = verb.tenses[randomTenseKey];
+
   // случайная форма
-  const form = verb.forms[randomInt(0, verb.forms.length - 1)];
+  const form = tense.forms[randomInt(0, tense.forms.length - 1)];
 
   // данные
   const translation = form.translation;
@@ -56,6 +63,13 @@ function generateCard() {
   const answerText = `${form.person} ${form.conjugation}`;
 
   const hintText = `${form.person} · ${verb.infinitive}`;
+
+  //Время
+  const tenseLabel = document.createElement("div");
+
+  tenseLabel.classList.add("tense");
+
+  tenseLabel.textContent = tense.label;
 
   // QUESTION
   const question = document.createElement("div");
@@ -83,6 +97,7 @@ function generateCard() {
   answer.textContent = answerText;
 
   // append
+  card.appendChild(tenseLabel);
   card.appendChild(question);
   card.appendChild(answer);
 

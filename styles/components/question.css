@@ -16,3 +16,9 @@
 
   color: var(--color-text);
 }
+
+.tense {
+  margin: 0;
+  font-size: 24px;
+  color: var(--color-primary);
+}

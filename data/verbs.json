@@ -2,214 +2,112 @@
   {
     "infinitive": "être",
     "translation": "быть",
-    "group": 3,
-    "irregular": true,
-    "forms": [
-      {
-        "person": "je",
-        "conjugation": "suis",
-        "translation": "я есть"
-      },
-      {
-        "person": "tu",
-        "conjugation": "es",
-        "translation": "ты есть"
-      },
-      {
-        "person": "il",
-        "conjugation": "est",
-        "translation": "он есть"
-      },
-      {
-        "person": "elle",
-        "conjugation": "est",
-        "translation": "она есть"
-      },
-      {
-        "person": "on",
-        "conjugation": "est",
-        "translation": "мы(*) есть"
-      },
-      {
-        "person": "nous",
-        "conjugation": "sommes",
-        "translation": "мы есть"
-      },
-      {
-        "person": "vous",
-        "conjugation": "êtes",
-        "translation": "вы есть"
-      },
-      {
-        "person": "ils",
-        "conjugation": "sont",
-        "translation": "они есть"
-      },
-      {
-        "person": "elles",
-        "conjugation": "sont",
-        "translation": "они(*) есть"
-      }
-    ]
-  },
-  {
-    "infinitive": "avoir",
-    "translation": "иметь",
-    "group": 3,
-    "irregular": true,
-    "forms": [
-      {
-        "person": "j'",
-        "conjugation": "ai",
-        "translation": "я имею"
-      },
-      {
-        "person": "tu",
-        "conjugation": "as",
-        "translation": "ты имеешь"
-      },
-      {
-        "person": "il",
-        "conjugation": "a",
-        "translation": "он имеет"
-      },
-      {
-        "person": "elle",
-        "conjugation": "a",
-        "translation": "она имеет"
-      },
-      {
-        "person": "on",
-        "conjugation": "a",
-        "translation": "мы(*) имеем"
-      },
-      {
-        "person": "nous",
-        "conjugation": "avons",
-        "translation": "мы имеем"
-      },
-      {
-        "person": "vous",
-        "conjugation": "avez",
-        "translation": "вы имеете"
-      },
-      {
-        "person": "ils",
-        "conjugation": "ont",
-        "translation": "они имеют"
-      },
-      {
-        "person": "elles",
-        "conjugation": "ont",
-        "translation": "они(*) имеют"
-      }
-    ]
-  },
-  {
-    "infinitive": "aller",
-    "translation": "идти",
-    "group": 3,
-    "irregular": true,
-    "forms": [
-      {
-        "person": "je",
-        "conjugation": "vais",
-        "translation": "я иду"
-      },
-      {
-        "person": "tu",
-        "conjugation": "vas",
-        "translation": "ты идешь"
-      },
-      {
-        "person": "il",
-        "conjugation": "va",
-        "translation": "он идет"
-      },
-      {
-        "person": "elle",
-        "conjugation": "va",
-        "translation": "она идет"
-      },
-      {
-        "person": "on",
-        "conjugation": "va",
-        "translation": "мы(*) идем"
-      },
-      {
-        "person": "nous",
-        "conjugation": "avons",
-        "translation": "мы идем"
-      },
-      {
-        "person": "vous",
-        "conjugation": "avez",
-        "translation": "вы идете"
-      },
-      {
-        "person": "ils",
-        "conjugation": "vont",
-        "translation": "они идут"
-      },
-      {
-        "person": "elles",
-        "conjugation": "vont",
-        "translation": "они(*) идут"
-      }
-    ]
-  },
-  {
-    "infinitive": "faire",
-    "translation": "делать",
-    "group": 3,
-    "irregular": true,
 
-    "forms": [
-      {
-        "person": "je",
-        "conjugation": "fais",
-        "translation": "я делаю"
+    "tenses": {
+      "present": {
+        "label": "Présent",
+
+        "forms": [
+          {
+            "person": "je",
+            "conjugation": "suis",
+            "translation": "я есть"
+          },
+          {
+            "person": "tu",
+            "conjugation": "es",
+            "translation": "ты есть"
+          },
+
+          {
+            "person": "il",
+            "conjugation": "est",
+            "translation": "он есть"
+          },
+          {
+            "person": "elle",
+            "conjugation": "est",
+            "translation": "она есть"
+          },
+          {
+            "person": "on",
+            "conjugation": "est",
+            "translation": "мы(*) есть"
+          },
+          {
+            "person": "nous",
+            "conjugation": "sommes",
+            "translation": "мы есть"
+          },
+          {
+            "person": "vous",
+            "conjugation": "êtes",
+            "translation": "вы есть"
+          },
+          {
+            "person": "ils",
+            "conjugation": "sont",
+            "translation": "они есть"
+          },
+          {
+            "person": "elles",
+            "conjugation": "sont",
+            "translation": "они(*) есть"
+          }
+        ]
       },
-      {
-        "person": "tu",
-        "conjugation": "fais",
-        "translation": "ты делаешь"
-      },
-      {
-        "person": "il",
-        "conjugation": "fait",
-        "translation": "он делает"
-      },
-      {
-        "person": "elle",
-        "conjugation": "fait",
-        "translation": "она делает"
-      },
-      {
-        "person": "on",
-        "conjugation": "fait",
-        "translation": "мы(*) делаем"
-      },
-      {
-        "person": "nous",
-        "conjugation": "faisons",
-        "translation": "мы делаем"
-      },
-      {
-        "person": "vous",
-        "conjugation": "faites",
-        "translation": "вы делаете"
-      },
-      {
-        "person": "ils",
-        "conjugation": "font",
-        "translation": "они делают"
-      },
-      {
-        "person": "elles",
-        "conjugation": "font",
-        "translation": "они(*) делают"
+
+      "passeCompose": {
+        "label": "Passé Composé",
+
+        "forms": [
+          {
+            "person": "je",
+            "conjugation": "ai été",
+            "translation": "я был"
+          },
+          {
+            "person": "tu",
+            "conjugation": "as été",
+            "translation": "ты был"
+          },
+          {
+            "person": "il",
+            "conjugation": "a été",
+            "translation": "он был"
+          },
+          {
+            "person": "elle",
+            "conjugation": "a été",
+            "translation": "она была"
+          },
+          {
+            "person": "on",
+            "conjugation": "a été",
+            "translation": "мы(*) были"
+          },
+          {
+            "person": "nous",
+            "conjugation": "avons été",
+            "translation": "мы были"
+          },
+          {
+            "person": "vous",
+            "conjugation": "avez été",
+            "translation": "вы были"
+          },
+          {
+            "person": "ils",
+            "conjugation": "ont été",
+            "translation": "они были"
+          },
+          {
+            "person": "elles",
+            "conjugation": "ont été",
+            "translation": "они(*) были"
+          }
+        ]
       }
-    ]
+    }
   }
 ]
